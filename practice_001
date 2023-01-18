@@ -1,0 +1,15 @@
+class Fruit:
+  def __init__(self, name, color):
+    self.name = name
+    self.color = color
+    
+  def changeName(self, newName):
+    self.name = newName
+    
+  def __str__(self):
+    return "The class name is {}, and the color is {}".format(self.name, self.color)
+    
+apple = Fruit("Apple", "Red")
+print(apple)
+apple.changeName("apple")
+rpint(apple)
